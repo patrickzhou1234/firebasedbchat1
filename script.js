@@ -42,4 +42,5 @@ const fetchChat=db.ref("messages/");
 fetchChat.on("child_added",function(snapshot){
   const message = snapshot.val();
   msgs.innerHTML += message.msg+"<br>";
+  msgs.scrollTop = msgs.scrollHeight;
 });
