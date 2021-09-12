@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Chatroom</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="firebase-app.js"></script>
+    <script src="firebase-database.js"></script>
+  </head>
+  <body>
+    <input id="username" type="text" placeholder="What is your username? " onkeydown="checkinput(event, this.id)" autocomplete="off" autofocus>
+    <p id="submituser" onclick="welc()">✅</p>
+    <p id="msgs"></p>
+    <input id="msginput" type="text" placeholder="Type a message..." autocomplete="off" onkeypress="checkinput(event, this.id)">
+    <img id="chatbtn" src="chatbtn.png" onclick="sendmsg()">
+    <script src="script.js"></script>
+  </body>
+</html>
