@@ -1,0 +1,97 @@
+html {
+  background-color: #1D2333;
+  overflow: hidden;
+}
+
+p {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+  user-drag: none; 
+  -webkit-user-drag: none;
+}
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+  user-drag: none; 
+  -webkit-user-drag: none;
+}
+
+#username {
+  width: 30vw;
+  height: 5vh;
+  background-color: rgb(39, 48, 71);
+  border: none;
+  color: white;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+#username:focus {
+  outline: none;
+}
+
+#submituser {
+  position: absolute;
+  left: 31vw;
+  top: 0px;
+  margin: 0px;
+  font-size: calc(1vw + 2vh);
+}
+
+#submituser:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#submituser:active {
+  opacity: 0.6;
+}
+
+#msgs {
+  margin: 0px;
+  position: absolute;
+  top: 5vh;
+  font-size: 2vw;
+  color: white;
+}
+
+#msginput {
+  left: 0px;
+  top: 90vh;
+  position: absolute;
+  width: 60vw;
+  height: 10vh;
+  border: none;
+  color: white;
+  background-color: rgb(39, 48, 71);
+  display: none;
+}
+
+#msginput:focus {
+  outline: none;
+}
+
+#chatbtn {
+  position: absolute;
+  left: 62vw;
+  top: 90vh;
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  display: none;
+}
+
+#chatbtn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#chatbtn:active {
+  opacity: 0.6;
+}
