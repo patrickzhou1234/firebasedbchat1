@@ -19,7 +19,7 @@ function sendmsg() {
 }
 
 function welc() {
-  db.ref("messages/"+new Date().toLocaleTimeString()).set({
+  db.ref("messages/"+new Date()).set({
       msg: "Bot🤖: Welcome to the chat "+username.value+". "
   });
   username.style.display = "none";
