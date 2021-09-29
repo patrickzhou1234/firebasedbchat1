@@ -12,7 +12,7 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 
 function sendmsg() {
-  db.ref("messages/"+new Date().toLocaleTimeString()).set({
+  db.ref("messages/"+new Date()).set({
       msg: username.value+": "+msginput.value
   });
   msginput.value = "";
